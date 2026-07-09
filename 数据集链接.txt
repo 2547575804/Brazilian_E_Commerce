@@ -1,0 +1,31 @@
+经典推荐：纽约出租车运行数据 (New York City Taxi Trip Data)
+•	数据集名称：New York City Taxi Trip Data 或检索相关的 NYC Taxi Dataset
+•	估算大小：约 500MB - 2GB（取决于选用的年份和月份版本）
+•	核心特性：标准的结构化 CSV 数据，包含上千万条出租车上下车时间、经纬度、乘客数、行程距离、付款类型、费用等字段。
+•	适合点：
+o	时间序列与聚合：按小时、工作日分析打车高峰期。
+o	空间分析：结合地理经纬度计算热门区域。
+o	Spark MLlib 预测：利用线性回归（Linear Regression）或 GBT 预测小费金额或行程时间。
+https://www.kaggle.com/datasets/microize/newyork-yellow-taxi-trip-data-2020-2019?select=taxi%2B_zone_lookup.csv
+
+2. 电商综合：巴西 Olist 真实电商数据 (Brazilian E-Commerce Public Dataset by Olist)
+•	数据集名称：Brazilian E-Commerce Public Dataset by Olist
+•	估算大小：解压后约 120MB - 350MB 左右（多表关联）
+•	核心特性：包含 10 万笔真实的电商订单数据。它不是单一的大文件，而是由订单表、客户表、商品表、评论表、付款表等 9 个互相有关联的 CSV 文件 组成。
+•	适合点：
+o	多表大连接 (Join Operations)：练习 Spark 的 join 操作，讲解 Shuffle Join、Broadcast Join（大表 Join 小表）的原理和调优。
+o	用户画像与 RFM 模型：通过聚合函数计算用户的消费频次和金额。
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
+
+3. 社交与行为分析：Spotify 每日更新播客/歌曲行为数据 (Top Spotify Podcast Episodes)
+•	数据集名称：Top Spotify Podcast Episodes 或 Spotify Tracks DB
+•	估算大小：约 600MB - 1GB
+•	核心特性：包含音乐、播客的元数据以及大量的用户收听特征（如舞蹈性、能量值、声学性等）。
+•	适合点：
+o	特征工程与聚类：使用 Spark MLlib 的 K-Means 算法对音乐或播客进行风格聚类。
+o	复杂文本与标签提取：对播客描述字段进行分词或正则提取。
+https://www.kaggle.com/datasets/daniilmiheev/top-spotify-podcasts-daily-updated
+
+
+
+
